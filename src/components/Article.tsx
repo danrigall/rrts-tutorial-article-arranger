@@ -9,7 +9,7 @@ type Props = {
 
 export const Article: React.FC<Props> = ({ article, removeArticle }) => {
   const dispatch: Dispatch<any> = useDispatch()
-  // TODO: solidify how to use useCallback() for your brain, young man.
+  // TODO: solidify how to use useCallback() for your brain, young man
   const deleteArticle = React.useCallback(
     (article: IArticle) => dispatch(removeArticle(article)),
     [dispatch, removeArticle]

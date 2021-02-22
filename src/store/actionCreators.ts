@@ -10,7 +10,7 @@ export function addArticle(article: IArticle) {
 
 export function removeArticle(article: IArticle) {
   const action: ArticleAction = {
-    type: actionTypes.ADD_ARTICLE,
+    type: actionTypes.REMOVE_ARTICLE,
     article,
   }
   return simulateHttpRequest(action)

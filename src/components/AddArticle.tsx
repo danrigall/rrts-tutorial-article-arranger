@@ -26,6 +26,12 @@ export const AddArticle: React.FC<Props> = ({ saveArticle }) => {
       placeholder='Title'
       onChange={handleArticleData}
       />
+      <input 
+      type="text"
+      id='body'
+      placeholder='Body'
+      onChange={handleArticleData}
+      />
       <button disabled={article === undefined ? true : false}>
         Add article
       </button>

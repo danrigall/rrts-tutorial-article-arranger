@@ -12,11 +12,9 @@ const store: Store<ArticleState, ArticleAction> & {
   dispatch: DispatchType
 } = createStore(reducer, applyMiddleware(thunk))
 
-const rootElement = document.getElementById('root')
-
 render(
   <Provider store={store}>
     <App />
   </Provider>,
-  rootElement
+  document.getElementById('root')
 )

@@ -20,6 +20,7 @@ const initialState: ArticleState = {
 const reducer = (state: ArticleState = initialState, action: ArticleAction): ArticleState => {
   switch (action.type) {
     case actionTypes.ADD_ARTICLE:
+      // TODO: create system where id's actually make sense
       const newArticle: IArticle = {
         id: Math.random(),
         title: action.article.title,
